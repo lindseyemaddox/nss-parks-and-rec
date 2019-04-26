@@ -1,0 +1,34 @@
+
+body {
+  font-family: "arial", sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+code {
+  display: block;
+  margin: 6px 0 20px;
+}
+
+li {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 0 0 10px;
+}
+
+.border {
+  border: 1px solid green;
+  margin: 10px auto;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.visited {
+  border: 1px dashed red;
+}
