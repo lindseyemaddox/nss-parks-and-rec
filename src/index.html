@@ -35,10 +35,37 @@
       it should have a green solid border.</li>
   </ol>
 
-  <div id="output">
-  </div>
+  <h2>Part Two</h2>
 
-  <script src="scripts/scripts.js"></script>
+  <p>For each of the national parks, use the latitude and longitude to get the weather. The Dark Sky API allows you to
+    request weather forecasts and historical weather data programmatically. It is the easiest, most advanced weather API
+    on the web.</p>
+
+  <ol>
+    <li>From the data coming back from the <a href="https://darksky.net/dev">Dark Sky API</a>, you are going to use
+      summary listed under currently, hourly and daily.</li>
+
+    <li>Change your original html to look like this:</li>
+
+    <code>&lt;article&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Park Name&lt;/h3&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;State the park in located in&lt;/p&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Weather:&lt;/p&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Currently: Summary from currently in API Data&lt;/li&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Today: Summary from hourly in API Data&lt;/li&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Week: Summary from daily in API Data&lt;/li&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br />
+      &lt;/article&gt;</code>
+
+  </ol>
+
+  <div id="container"></div>
+
+  <script src="scripts/domBuilder.js"></script>
+  <script src="scripts/key.js"></script>
+  <script src="scripts/park.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 
 </html>
