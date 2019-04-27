@@ -24,9 +24,9 @@ const getParkData = () => {
             let current = weatherData.currently.summary;
             let today = weatherData.hourly.summary;
             let week = weatherData.daily.summary;
-            parkDomBuilder(parkName, parkState, parkVisit, current, today, week)
+            parkDomBuilder(parkName, parkState, parkVisit, current, today, week);
           });
-      })
-    })
-}
-getParkData()
+      });
+    });
+};
+getParkData();

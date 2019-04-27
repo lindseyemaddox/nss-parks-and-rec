@@ -2,12 +2,12 @@
 const parkContainerEl = document.getElementById("container");
 
 const parkDomBuilder = (name, state, visited, current, today, week) => {
-let borderClass = "unvisited"
-if(visited) {
-    borderClass = " visited"
-}
-parkContainerEl.innerHTML += `
-<article class="${borderClass}">
+  let borderClass = "unvisited";
+  if (visited) {
+    borderClass = "visited";
+  }
+  parkContainerEl.innerHTML += `
+<article class="park ${borderClass}">
   <h3>${name}</h3>
   <p>${state}</p>
   <p>Weather:</p>
@@ -18,4 +18,4 @@ parkContainerEl.innerHTML += `
       </ul>
 </article>
 `;
-}
+};
